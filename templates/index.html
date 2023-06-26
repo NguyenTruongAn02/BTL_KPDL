@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Titanic Survival Prediction</title>
+</head>
+<body>
+    <h1>Titanic Survival Prediction</h1>
+    <form action="/predict" method="post">
+        <label for="pclass">Pclass:</label>
+        <input type="text" id="pclass" name="pclass" required><br>
+
+<!--        <label for="name">Name:</label>-->
+<!--        <input type="text" id="name" name="name" required><br>-->
+
+        <label for="sex">Sex:</label>
+        <input type="text" id="sex" name="sex" required><br>
+
+        <label for="age">Age:</label>
+        <input type="text" id="age" name="age" required><br>
+
+        <label for="sibsp">SibSp:</label>
+        <input type="text" id="sibsp" name="sibsp" required><br>
+
+        <label for="parch">Parch:</label>
+        <input type="text" id="parch" name="parch" required><br>
+
+<!--        <label for="ticket">Ticket:</label>-->
+<!--        <input type="text" id="ticket" name="ticket" required><br>-->
+
+        <label for="fare">Fare:</label>
+        <input type="text" id="fare" name="fare" required><br>
+
+<!--        <label for="cabin">Cabin:</label>-->
+<!--        <input type="text" id="cabin" name="cabin" required><br>-->
+
+<!--        <label for="embarked">Embarked:</label>-->
+<!--        <input type="text" id="embarked" name="embarked" required><br>-->
+
+        <input type="submit" value="Predict">
+    </form>
+
+<p>{{ prediction_text }}</p>
+</body>
+</html>
